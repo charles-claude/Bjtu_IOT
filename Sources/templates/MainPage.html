@@ -1,0 +1,130 @@
+
+<h1 class="title">CLAUDE Charles 19129127</h1>
+
+<div  class ="ImgTvoc">
+  <img class ="timg"src="{{url_for('static', filename='tvoc.PNG')}}"
+  align="middle"/>
+</div>
+
+<div class="container">
+  <div class="row">
+    <img class ="img "src="{{url_for('static', filename='Pekin.jpg')}}"
+      align="middle"/>
+    <div class="info">
+    <div class="temp">
+      <div  id="temperature">67&deg; 
+      <small>C</small></div>
+    </div>
+    <div class="carbon">
+      <label for="co2">Co2: </label>
+       <div id="co2">
+        440 PPM  
+        </div> 
+    </div>
+    <div class="tvoc">
+      <label for="voc">Tvoc: </label>
+      <div id="voc">
+       7 PPM
+       </div> 
+   </div>
+    </div>    
+  </div>
+</div>
+
+<style>
+
+
+  .timg{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%)
+  }
+  .img{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .container{
+    position: absolute;
+    top: 50%; left: 70%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+    border: 5px double rgba(28,110,164,0.2);
+    border-radius: 18px;
+  }
+  .weather
+  {
+      display: flex;
+      flex-flow: column wrap;
+      box-shadow: 0px 1px 10px 0px #cfcfcf;
+      overflow: hidden;
+  }
+
+.temp
+ {
+   font-size: 56px;
+   position: absolute;
+   top: 20%; left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   padding: 20px;
+   text-shadow: 1px 1px #F68D2E;
+ }
+
+ .carbon{
+   display: flex;
+   flex-direction: row;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px #F68D2E;
+ }
+
+ .tvoc{
+  display: flex;
+   flex-direction: row;
+    font-size: 40px;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px #F68D2E;
+ }
+
+ .ImgTvoc{
+   position: absolute;
+   left: 38%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   height: 30%;
+    width: 30%;
+   border: 5px double rgba(28,110,164,0.2);
+    border-radius: 18px;
+ }
+
+ .title{
+  font-size: 56px;
+   position: absolute;
+   top: 15%; left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;
+   padding: 20px;
+   text-shadow: 1px 1px #F68D2E;
+ }
+
+</style>
+
+<script src="../static/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
