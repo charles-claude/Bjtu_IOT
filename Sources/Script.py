@@ -25,7 +25,7 @@ def mainPage():
 
 @app.route('/sensor')
 def get_sensor_value():
-    co2 = random.randint(100,9999)
+    co2 = random.randint(0,800)
     tvoc = random.randint(1,500)
     temp = random.randint(-20,40)
     return str('{"co2": "' + str(co2) + '", "tvoc": ' + str(tvoc) + ', "temp": ' + str(temp) + '}')
